@@ -7,6 +7,7 @@
     tools:context=".PhotosActivity">
 
     <TableLayout
+        android:id="@+id/table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -19,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
+            android:id="@+id/tr1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -43,6 +45,7 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/tr2"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -66,6 +69,7 @@
         </TableRow>
 
         <TableRow
+            android:id="@+id/tr3"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -88,5 +92,18 @@
                 app:srcCompat="@drawable/tf8" />
         </TableRow>
     </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/avatars_info"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
